@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Cuenta" package="Entidad" visibility="public" xPosition="413.0" yPosition="20.0">
+      <Fields>
+        <Field name="saldo" type="float" visibility="protected"/>
+        <Field name="numeroConsignaciones" type="int" visibility="protected"/>
+        <Field name="numeroRetiros" type="int" visibility="protected"/>
+        <Field name="tasaAnual" type="float" visibility="protected"/>
+        <Field name="comisionMensual" type="float" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="float" name="saldo"/>
+          <Argument type="float" name="tasaAnual"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="ConsignarDinero" returnType="void" visibility="public">
+          <Argument type="float" name="cantidad"/>
+        </Method>
+        <Method name="RetirarDinero" returnType="void" visibility="public">
+          <Argument type="float" name="cantidad"/>
+        </Method>
+        <Method name="CalcularInteres" returnType="void" visibility="public"/>
+        <Method name="ExtractoMensual" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CuentaAhorros" package="Entidad" visibility="public" xPosition="637.0" yPosition="330.0">
+      <Fields>
+        <Field name="activa" type="boolean" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="float" name="saldo"/>
+          <Argument type="float" name="tasaAnual"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="RetirarDinero" returnType="void" visibility="public">
+          <Argument type="float" name="cantidad"/>
+        </Method>
+        <Method name="ConsignarDinero" returnType="void" visibility="public">
+          <Argument type="float" name="cantidad"/>
+        </Method>
+        <Method name="ExtractoMensual" returnType="void" visibility="public"/>
+        <Method name="Imprimir" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CuentaCorriente" package="Entidad" visibility="public" xPosition="149.0" yPosition="330.0">
+      <Fields>
+        <Field name="sobregiro" type="float" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="float" name="saldo"/>
+          <Argument type="float" name="tasaAnual"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="RetirarDinero" returnType="void" visibility="public">
+          <Argument type="float" name="cantidad"/>
+        </Method>
+        <Method name="ConsignarDinero" returnType="void" visibility="public">
+          <Argument type="float" name="cantidad"/>
+        </Method>
+        <Method name="ExtractoMensual" returnType="void" visibility="public"/>
+        <Method name="Imprimir" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Entidad.CuentaAhorros" target="Entidad.Cuenta"/>
+    <IsRelation name="is" source="Entidad.CuentaCorriente" target="Entidad.Cuenta"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

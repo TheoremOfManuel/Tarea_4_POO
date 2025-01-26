@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="LocalComercial" package="Inmuebles" visibility="public" xPosition="873.0" yPosition="297.0">
+      <Fields>
+        <Field name="valorArea" type="double" visibility="protected" isStatic="true"/>
+        <Field name="centroComercial" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="tipo" name="tipoLocal"/>
+          <Argument type="String" name="centroComercial"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Apartaestudio" package="Inmuebles" visibility="public" xPosition="9.0" yPosition="377.0">
+      <Fields>
+        <Field name="valorArea" type="double" visibility="protected" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="int" name="numeroHabitaciones"/>
+          <Argument type="int" name="numeroBanos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Apartamento" package="Inmuebles" visibility="public" xPosition="70.0" yPosition="212.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="int" name="numeroHabitaciones"/>
+          <Argument type="int" name="numeroBanos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="ApartamentoFamiliar" package="Inmuebles" visibility="public" xPosition="188.0" yPosition="377.0">
+      <Fields>
+        <Field name="valorArea" type="double" visibility="protected" isStatic="true"/>
+        <Field name="valorAdministracion" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="int" name="numeroHabitaciones"/>
+          <Argument type="int" name="numeroBanos"/>
+          <Argument type="int" name="valorAdministracion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Casa" package="Inmuebles" visibility="public" xPosition="430.0" yPosition="212.0">
+      <Fields>
+        <Field name="numeroPisos" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="int" name="numeroHabitaciones"/>
+          <Argument type="int" name="numeroBanos"/>
+          <Argument type="int" name="numeroPisos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="CasaConjuntoCerrado" package="Inmuebles" visibility="public" xPosition="367.0" yPosition="482.0">
+      <Fields>
+        <Field name="valorArea" type="double" visibility="protected" isStatic="true"/>
+        <Field name="valorAdministracion" type="int" visibility="protected"/>
+        <Field name="tienePiscina" type="boolean" visibility="protected"/>
+        <Field name="tieneCamposDeportivos" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="int" name="numeroHabitaciones"/>
+          <Argument type="int" name="numeroBanos"/>
+          <Argument type="int" name="numeroPisos"/>
+          <Argument type="int" name="valorAdministracion"/>
+          <Argument type="boolean" name="tienePiscina"/>
+          <Argument type="boolean" name="tieneCamposDeportivos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="CasaIndependiente" package="Inmuebles" visibility="public" xPosition="689.0" yPosition="498.0">
+      <Fields>
+        <Field name="valorArea" type="double" visibility="protected" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="int" name="numeroHabitaciones"/>
+          <Argument type="int" name="numeroBanos"/>
+          <Argument type="int" name="numeroPisos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="CasaRural" package="Inmuebles" visibility="public" xPosition="652.0" yPosition="248.0">
+      <Fields>
+        <Field name="valorArea" type="double" visibility="protected" isStatic="true"/>
+        <Field name="distanciaCabera" type="int" visibility="protected"/>
+        <Field name="altitud" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="int" name="numeroHabitaciones"/>
+          <Argument type="int" name="numeroBanos"/>
+          <Argument type="int" name="numeroPisos"/>
+          <Argument type="int" name="distanciaCabera"/>
+          <Argument type="int" name="altitud"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="CasaUrbana" package="Inmuebles" visibility="public" xPosition="480.0" yPosition="351.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="int" name="numeroHabitaciones"/>
+          <Argument type="int" name="numeroBaños"/>
+          <Argument type="int" name="numeroPisos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Inmueble" package="Inmuebles" visibility="public" xPosition="652.0" yPosition="20.0">
+      <Fields>
+        <Field name="identificadorInmobiliario" type="int" visibility="protected"/>
+        <Field name="area" type="int" visibility="protected"/>
+        <Field name="direccion" type="String" visibility="protected"/>
+        <Field name="precioVenta" type="double" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="calcularPrecioVenta" returnType="double" visibility="package">
+          <Argument type="double" name="valorArea"/>
+        </Method>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="InmuebleVivienda" package="Inmuebles" visibility="public" xPosition="283.0" yPosition="46.0">
+      <Fields>
+        <Field name="numeroHabitaciones" type="int" visibility="protected"/>
+        <Field name="numeroBanos" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="int" name="numeroHabitaciones"/>
+          <Argument type="int" name="numeroBanos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Local" package="Inmuebles" visibility="public" xPosition="1061.0" yPosition="72.0">
+      <Fields>
+        <Field name="tipoLocal" type="tipo" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="tipo" name="tipoLocal"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Oficina" package="Inmuebles" visibility="public" xPosition="1219.0" yPosition="297.0">
+      <Fields>
+        <Field name="valorArea" type="double" visibility="protected" isStatic="true"/>
+        <Field name="esGobierno" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="identificadorInmobiliario"/>
+          <Argument type="int" name="area"/>
+          <Argument type="String" name="direccion"/>
+          <Argument type="tipo" name="tipoLocal"/>
+          <Argument type="boolean" name="esGobierno"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="imprimir" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Enum name="tipo" package="Inmuebles" visibility="public" xPosition="1041.0" yPosition="297.0">
+      <Literals>
+        <Literal name="INTERNO"/>
+        <Literal name="CALLE"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Inmuebles.CasaConjuntoCerrado" target="Inmuebles.CasaUrbana"/>
+    <IsRelation name="is" source="Inmuebles.InmuebleVivienda" target="Inmuebles.Inmueble"/>
+    <IsRelation name="is" source="Inmuebles.Apartaestudio" target="Inmuebles.Apartamento"/>
+    <IsRelation name="is" source="Inmuebles.Apartamento" target="Inmuebles.InmuebleVivienda"/>
+    <IsRelation name="is" source="Inmuebles.Oficina" target="Inmuebles.Local"/>
+    <IsRelation name="is" source="Inmuebles.Casa" target="Inmuebles.InmuebleVivienda"/>
+    <IsRelation name="is" source="Inmuebles.CasaRural" target="Inmuebles.Casa"/>
+    <IsRelation name="is" source="Inmuebles.Local" target="Inmuebles.Inmueble"/>
+    <IsRelation name="is" source="Inmuebles.LocalComercial" target="Inmuebles.Local"/>
+    <IsRelation name="is" source="Inmuebles.CasaUrbana" target="Inmuebles.Casa"/>
+    <HasRelation name="tipoLocal" source="Inmuebles.Local" target="Inmuebles.tipo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Inmuebles.ApartamentoFamiliar" target="Inmuebles.Apartamento"/>
+    <IsRelation name="is" source="Inmuebles.CasaIndependiente" target="Inmuebles.CasaUrbana"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
