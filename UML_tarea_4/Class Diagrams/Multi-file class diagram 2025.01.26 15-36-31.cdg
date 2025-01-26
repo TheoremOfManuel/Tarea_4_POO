@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Canido" package="Animales" visibility="public" isAbstract="true" xPosition="315.0" yPosition="140.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Leon" package="Animales" visibility="public" xPosition="887.0" yPosition="322.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getSonido" returnType="String" visibility="public"/>
+        <Method name="getAlimentos" returnType="String" visibility="public"/>
+        <Method name="getHabitat" returnType="String" visibility="public"/>
+        <Method name="getNombreCientifico" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Animal" package="Animales" visibility="public" isAbstract="true" xPosition="520.0" yPosition="9.0">
+      <Fields>
+        <Field name="sonido" type="String" visibility="protected"/>
+        <Field name="alimentos" type="String" visibility="protected"/>
+        <Field name="habitat" type="String" visibility="protected"/>
+        <Field name="nombreCientifico" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNombreCientifico" returnType="String" visibility="public" isAbstract="true"/>
+        <Method name="getSonido" returnType="String" visibility="public" isAbstract="true"/>
+        <Method name="getAlimentos" returnType="String" visibility="public" isAbstract="true"/>
+        <Method name="getHabitat" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Gato" package="Animales" visibility="public" xPosition="671.0" yPosition="322.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getSonido" returnType="String" visibility="public"/>
+        <Method name="getAlimentos" returnType="String" visibility="public"/>
+        <Method name="getHabitat" returnType="String" visibility="public"/>
+        <Method name="getNombreCientifico" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lobo" package="Animales" visibility="public" xPosition="361.0" yPosition="322.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getSonido" returnType="String" visibility="public"/>
+        <Method name="getAlimentos" returnType="String" visibility="public"/>
+        <Method name="getHabitat" returnType="String" visibility="public"/>
+        <Method name="getNombreCientifico" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Felino" package="Animales" visibility="public" isAbstract="true" xPosition="781.0" yPosition="140.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Perro" package="Animales" visibility="public" xPosition="153.0" yPosition="322.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getSonido" returnType="String" visibility="public"/>
+        <Method name="getAlimentos" returnType="String" visibility="public"/>
+        <Method name="getHabitat" returnType="String" visibility="public"/>
+        <Method name="getNombreCientifico" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Animales.Felino" target="Animales.Animal"/>
+    <IsRelation name="is" source="Animales.Gato" target="Animales.Felino"/>
+    <IsRelation name="is" source="Animales.Canido" target="Animales.Animal"/>
+    <IsRelation name="is" source="Animales.Lobo" target="Animales.Canido"/>
+    <IsRelation name="is" source="Animales.Perro" target="Animales.Canido"/>
+    <IsRelation name="is" source="Animales.Leon" target="Animales.Felino"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
