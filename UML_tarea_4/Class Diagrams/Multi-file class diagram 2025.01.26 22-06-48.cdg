@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="VentanaPrincipal" package="Personas" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="lista" type="ListaPersonas" visibility="private"/>
+        <Field name="contenedor" type="Container" visibility="private"/>
+        <Field name="nombre" type="JLabel" visibility="private"/>
+        <Field name="campoNombre" type="JTextField" visibility="private"/>
+        <Field name="anadir" type="JButton" visibility="private"/>
+        <Field name="listaNombres" type="JList" visibility="private"/>
+        <Field name="modelo" type="DefaultListModel" visibility="private"/>
+        <Field name="scrollLista" type="JScrollPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="inicio" returnType="void" visibility="private"/>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="evento"/>
+        </Method>
+        <Method name="anadirPersona" returnType="void" visibility="private"/>
+        <Method name="eliminarNombre" returnType="void" visibility="private">
+          <Argument type="int" name="indice"/>
+        </Method>
+        <Method name="borrarLista" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="Personas" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="apellidos" type="String" visibility="package"/>
+        <Field name="telefono" type="String" visibility="package"/>
+        <Field name="direccion" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="String" name="teléfono"/>
+          <Argument type="String" name="dirección"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="ListaPersonas" package="Personas" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="listaPersonas" type="Vector" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="anadirPersona" returnType="void" visibility="public">
+          <Argument type="Persona" name="p"/>
+        </Method>
+        <Method name="eliminarPersona" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="borrarLista" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="lista" source="Personas.VentanaPrincipal" target="Personas.ListaPersonas" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ListaPersonas"/>
+    <UseRelation source="Personas.ListaPersonas" target="Personas.Persona" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
